@@ -18,10 +18,13 @@ final class AnalyticsTests: TestCaseBase {
     func testLoginSuccess() {
         launchApp(with: AppLaunchParameters(sendMetricsToPasteboard: true))
         
+        // Проверить что отправилось событие показа экрана входа
         analytics.assertContains(name: "open_login_screen")
         
+        // Успешно залогинится
         loginScreen.login(success: true)
         
+        // Проверить что отправилось событие успешной авторизации
         analytics.assertContains("authorization", ["success": true])
     }
     

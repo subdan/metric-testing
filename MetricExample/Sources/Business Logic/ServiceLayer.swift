@@ -7,27 +7,20 @@
 //
 
 import Foundation
+//import YandexMobileMetrica
 
 final class ServiceLayer {
     
     static let shared = ServiceLayer()
     
     private(set) lazy var metricService: MetricService = {
-        var metricServices: [MetricService] = []
-        
         if ProcessInfo.processInfo.isUITesting {
-            metricServices.append(MetricServiceForUITests())
+            return MetricServiceForUITests()
         } else {
-            if let apiKey = Bundle.main.object(forInfoDictionaryKey: "APP_METRICA_API_KEY") as? String {
-//                Код заккоментирован потому что AppMetrica не подключена проекту
-//                let config = YMMYandexMetricaConfiguration(apiKey: apiKey) {
-//                config.crashReporting = false
-//                let appMetricService = AppMetricService(configuration: config)
-                let appMetricService = AppMetricService()
-                metricServices.append(appMetricService)
-            }
+            fatalError()
+            //Код заккоментирован потому что AppMetrica не подключена проекту
+//            let config = YMMYandexMetricaConfiguration(apiKey: "APP_METRICA_API_KEY")
+//            return AppMetricService(configuration: config)
         }
-        
-        return CompoundMetricService(metricServices: metricServices)
     }()
 }

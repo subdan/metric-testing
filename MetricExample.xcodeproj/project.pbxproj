@@ -26,7 +26,6 @@
 		0FF260B32510B48F00D890E1 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF260B22510B48F00D890E1 /* LoginScreen.swift */; };
 		0FF260BB2510BC6400D890E1 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF260BA2510BC6400D890E1 /* ServiceLayer.swift */; };
 		0FF260BE2510BCE400D890E1 /* MetricService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF260BD2510BCE400D890E1 /* MetricService.swift */; };
-		0FF260C02510BD2500D890E1 /* CompoundMetricService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF260BF2510BD2500D890E1 /* CompoundMetricService.swift */; };
 		0FF260C22510BD9600D890E1 /* ProcessInfo+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF260C12510BD9600D890E1 /* ProcessInfo+extension.swift */; };
 		0FF260C52510BE1F00D890E1 /* MetricServiceForUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF260C42510BE1F00D890E1 /* MetricServiceForUITests.swift */; };
 		0FF260CC2510C1C500D890E1 /* LoginMetricEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF260CB2510C1C500D890E1 /* LoginMetricEvents.swift */; };
@@ -89,7 +88,6 @@
 		0FF260B22510B48F00D890E1 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		0FF260BA2510BC6400D890E1 /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
 		0FF260BD2510BCE400D890E1 /* MetricService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricService.swift; sourceTree = "<group>"; };
-		0FF260BF2510BD2500D890E1 /* CompoundMetricService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundMetricService.swift; sourceTree = "<group>"; };
 		0FF260C12510BD9600D890E1 /* ProcessInfo+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProcessInfo+extension.swift"; sourceTree = "<group>"; };
 		0FF260C42510BE1F00D890E1 /* MetricServiceForUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricServiceForUITests.swift; sourceTree = "<group>"; };
 		0FF260CB2510C1C500D890E1 /* LoginMetricEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMetricEvents.swift; sourceTree = "<group>"; };
@@ -246,7 +244,6 @@
 			isa = PBXGroup;
 			children = (
 				0FF260BD2510BCE400D890E1 /* MetricService.swift */,
-				0FF260BF2510BD2500D890E1 /* CompoundMetricService.swift */,
 				0FF260C42510BE1F00D890E1 /* MetricServiceForUITests.swift */,
 				0F4BBCD12510DFE300F80660 /* AppMetricService.swift */,
 			);
@@ -410,7 +407,6 @@
 				0FF260D02510C39200D890E1 /* MenuViewController.swift in Sources */,
 				0FF260DB2510C47000D890E1 /* MenuMetricEvents.swift in Sources */,
 				0F4BBCD22510DFE300F80660 /* AppMetricService.swift in Sources */,
-				0FF260C02510BD2500D890E1 /* CompoundMetricService.swift in Sources */,
 				0FF260742510B27100D890E1 /* AppDelegate.swift in Sources */,
 				0FF260762510B27100D890E1 /* SceneDelegate.swift in Sources */,
 				0FF260C52510BE1F00D890E1 /* MetricServiceForUITests.swift in Sources */,
