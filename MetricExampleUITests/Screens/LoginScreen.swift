@@ -27,10 +27,10 @@ final class LoginScreen {
     
     func login(success: Bool) {
         loginField.tap()
-        loginField.typeText(success ? "login" : "bad_login")
+        loginField.typeText(success ? "1" : "0")
         
         passwordField.tap()
-        passwordField.typeText(success ? "password" : "bad_password")
+        passwordField.typeText(success ? "1" : "0")
         
         loginButton.tap()
     }

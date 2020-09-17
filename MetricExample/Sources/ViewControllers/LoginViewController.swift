@@ -33,7 +33,7 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction private func login() {
-        if loginField.text == "login" && passwordField.text == "password" {
+        if loginField.text == "1" && passwordField.text == "1" {
             metricService.send(event: .authorization(success: true))
             openMenu()
         } else {
